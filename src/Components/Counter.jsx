@@ -13,7 +13,10 @@ class Counter extends Component {
   //  this.state.count +=1;
   this.setState({
     count:this.state.count + 1
+  },() => {
+    // Api call pagination
   });
+  // Api call with pagination
   // const {count} = this.state;
   // this.setState({
   //   count:count + 1
@@ -24,6 +27,11 @@ class Counter extends Component {
   //   } 
   // });
   }
+
+  handleArgumant = (name) => {
+    console.log("name",name);
+   }
+
   render() {
     // const style ={marginLeft:"50px", backgroundColor:'blue',color:'white'};
     const { count } = this.state;
@@ -32,6 +40,7 @@ class Counter extends Component {
       <>
         <h1>{heading} {count===0 ? 'zero': count }</h1><br/> 
         <button className="btn-style" onClick={this.handleClick}>Click count</button>
+        <button className="btn-style" onClick={()=>this.handleArgumant('Rehan')}>Click Argumant</button>
       </>
     );
   }
