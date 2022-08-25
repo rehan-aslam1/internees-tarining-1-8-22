@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import { Routes, Route } from "react-router-dom";
 import LoginClass from "./Components/LoginClass";
 import "./App.css";
+import LoginFunctional from "./Components/LoginFunctional";
 
 class App extends Component {
   state = {
@@ -14,7 +15,8 @@ class App extends Component {
     return (
       <>
           <Routes>
-            <Route path="/" element={<LoginClass />} />
+            {/* <Route path="/" element={<LoginClass />} /> */}
+            <Route path="/" element={<LoginFunctional />} />
           </Routes>
         {/* <h1>Learning react js by class component</h1>
         <Counter heading={heading} />
