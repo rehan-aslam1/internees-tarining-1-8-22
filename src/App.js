@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 // import Counter from "./Components/Counter";
-// import FunctionalCounter from "./Components/FunctionalCounter";
+import FunctionalCounter from "./Components/FunctionalCounter";
 import { Routes, Route } from "react-router-dom";
-import LoginClass from "./Components/LoginClass";
+// import LoginClass from "./Components/LoginClass";
 import "./App.css";
+import ChildrenProp from "./Components/ChildrenProp";
 import LoginFunctional from "./Components/LoginFunctional";
 
 class App extends Component {
@@ -16,7 +17,9 @@ class App extends Component {
       <>
           <Routes>
             {/* <Route path="/" element={<LoginClass />} /> */}
-            <Route path="/" element={<LoginFunctional />} />
+             {/* <Route path="/" element={<LoginFunctional />} /> */}
+            {/* <Route path="/child-prop" element={<ChildrenProp><h1>this is paragraph</h1></ChildrenProp>} /> */}
+            <Route path="/child-prop" element={<ChildrenProp><FunctionalCounter/></ChildrenProp>} />
           </Routes>
         {/* <h1>Learning react js by class component</h1>
         <Counter heading={heading} />
