@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import ChildrenProp from "./Components/ChildrenProp";
 import LoginFunctional from "./Components/LoginFunctional";
+import PostClass from "./Components/PostClass";
 
 class App extends Component {
   state = {
@@ -19,7 +20,8 @@ class App extends Component {
             {/* <Route path="/" element={<LoginClass />} /> */}
              {/* <Route path="/" element={<LoginFunctional />} /> */}
             {/* <Route path="/child-prop" element={<ChildrenProp><h1>this is paragraph</h1></ChildrenProp>} /> */}
-            <Route path="/child-prop" element={<ChildrenProp><FunctionalCounter/></ChildrenProp>} />
+            {/* <Route path="/child-prop" element={<ChildrenProp><FunctionalCounter/></ChildrenProp>} /> */}
+            <Route path="/child-prop" element={<PostClass/>} />
           </Routes>
         {/* <h1>Learning react js by class component</h1>
         <Counter heading={heading} />
